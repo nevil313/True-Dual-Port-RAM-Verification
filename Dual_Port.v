@@ -1,4 +1,4 @@
-module dual(clk,rst,we_a,we_b,data_a,data_b,add_a,add_b,read_a,read_b);
+module Dual_Port(clk,rst,we_a,we_b,data_a,data_b,add_a,add_b,read_a,read_b);
 
 input clk,rst,we_a,we_b ;
 input [7:0]data_a,data_b;
