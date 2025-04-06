@@ -1,0 +1,34 @@
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Desktop/TVDC/dual/dual.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Desktop/TVDC/dual/dual.sim/sim_1/behav/xsim/port1.txt'
+INFO: [SIM-utils-43] Exported 'D:/Desktop/TVDC/dual/dual.sim/sim_1/behav/xsim/port2.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Desktop/TVDC/dual/dual.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Desktop/TVDC/dual/dual.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Desktop/TVDC/dual/dual.sim/sim_1/behav/xsim'
+"xelab -wto 6b927d1e344b4774b38efaf863016e4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/xa/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6b927d1e344b4774b38efaf863016e4f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Total missmatches from port_1: 0
+Total missmatches from port_2: 0
+Total missmathes : 0 
+ Memory Is working properly without any ERROR 
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1131.887 ; gain = 0.000
